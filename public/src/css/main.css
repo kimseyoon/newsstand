@@ -1,0 +1,226 @@
+html, body, div, p, section, header, footer, a, ul, li, h4{
+  word-break: break-all;
+  white-space: normal;
+  margin:0;
+  padding:0;
+  font-size:16px;
+  font-family:"Helvetica Neue","arial","sans-serif";
+  line-height:18px;
+  color:#666;
+}
+
+a:link,a:hover,a:visited,a:active{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.nsWrap{
+	width:600px;
+	height:296px;
+	margin:100px auto 0;
+	border:1px solid #d9d9d9;
+}
+
+.nsWrap header{
+	position:relative;
+	padding:10px;
+	border-bottom:1px solid #d9d9d9;
+}
+
+.nsWrap header .location:after{
+  content:"";
+  display: block;
+  clear:both;
+}
+
+.nsWrap header .location li{
+	float:left;
+	margin-left:10px;
+	padding-left:10px;
+	border-left:1px solid #dbdbdb;
+}
+
+.nsWrap header .location li:first-child{
+	margin-left:0;
+	padding-left:0;
+	border-left:none;
+}
+
+.nsWrap header .location li a{
+	color:#333;
+}
+
+.nsWrap header .location li a:hover{
+	font-weight:bold;
+}
+
+.nsWrap header .btnMove:after{
+	content:"";
+  display: block;
+  clear:both;
+}
+
+.nsWrap header .btnMove{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.nsWrap header .btnMove a{
+	float:left;
+	padding:10px 15px 10px 15px;
+	border-left:1px solid #d9d9d9;
+}
+
+.nsWrap header .btnMove a:hover{
+	color:#fff;
+	background-color:#d9d9d9;
+}
+.mainArea{
+	overflow: hidden;
+	height:258px;
+}
+
+.mainArea .totalPressArea.show{
+	display:block;
+}
+
+.mainArea .totalPressArea{
+	display:none;
+}
+
+.totalPressArea .pressList li{
+	float:left;
+	width:149px;
+	border-right:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+}
+
+.totalPressArea .pressList li:nth-of-type(4n){
+	width:150px;
+	border-right:0;
+}
+
+.totalPressArea .pressList li .pressName{
+	text-align:center;
+	padding:20px;
+	font-size:1.4rem;
+	border-bottom:1px solid #d9d9d9;
+}
+
+.totalPressArea .pressList li .btnSbscription a{
+	text-align:center;
+	display: block;
+	padding:4px 0;
+	font-size:0.9rem;
+	color:#999;
+}
+
+.totalPressArea .pressList li .btnSbscription a:hover{
+	color:#fff;
+	font-weight:bold;
+	background-color:#d9d9d9;
+}
+
+.mainArea .myNewsArea{
+	display:none;
+	height:100%;
+}
+.mainArea .myNewsArea:after{
+	content:"";
+  display: block;
+  clear:both;
+}
+
+.mainArea .myNewsArea.show{
+	display:block;
+}
+
+.myNewsArea nav{
+	overflow-y: auto;
+	position:relative;
+	float:left;
+	width:160px;
+	height:257px;
+	border-right:1px solid #d9d9d9;
+}
+
+.myNewsArea nav ul{
+	padding:10px 15px
+}
+
+.myNewsArea nav ul li{
+	padding-top:7px;
+	cursor: pointer;
+}
+
+.myNewsArea nav ul li.select{
+	font-weight: bold;
+}
+
+.myNewsArea nav ul li:hover{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.myNewsArea nav ul li:first-child{
+	padding-top:0;
+}
+
+.myNewsArea nav .page{
+	position:absolute;
+	right:20px;
+	bottom:20px;
+}
+
+.myNewsArea .content{
+	float:left;
+	width:439px;
+}
+
+.myNewsArea .content .title{
+	position: relative;
+	padding:10px 15px;
+}
+.myNewsArea .content .title .newsName{
+	color:#333;
+	font-size:1.2rem;
+}
+
+.myNewsArea .content .title button{
+	position:absolute;
+	right:20px;
+	top:10px;
+}
+
+.myNewsArea .content .newsList{
+	position:relative;
+}
+
+.myNewsArea .content .newsList img{
+	position:absolute;
+	top:0;
+	left:15px;
+	width:100px;
+	height:100px;
+}
+
+.myNewsArea .content .newsList ul{
+	padding-left:130px;
+}
+
+.myNewsArea .content .newsList ul li{
+	width:300px;
+	margin-top:5px;
+	font-size:0.8rem;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.myNewsArea .content .newsList ul li:first-child{
+	margin-top:0;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>news</title>
+        <link rel="stylesheet" href="/src/css/main.css">
+    </head>
+    <body>
+
+    <div class="nsWrap">
+    	<header>
+    		<ul class="location">
+    			<li class="totalPress" id="totalPress"><a href="#tab01">전체언론사</a></li>
+    			<li class="myNews" id="myNews"><a href="#tab02">my뉴스</a></li>
+    		</ul>
+    		<div class="btnMove">
+    			<a href="#" class="left"><</a>
+    			<a href="#" class="right">></a>
+    		</div>
+    	</header>
+
+    	<section class="mainArea">
+        <div class="totalPressArea show" id="tab01">
+          <ul class="pressList">
+          </ul>
+        </div>
+        <div class="myNewsArea" id="tab02">
+      		<nav>
+      			<ul>
+              <li>sbs</li>
+              <li>sbs</li>
+              <li>sbs</li>
+              <li>sbs</li>
+              <li>sbs</li>
+            </ul>
+            <p class="page"> <span class="currentPage"></span> / <span class="totalPage"></span> </p>
+      		</nav>
+      		<section class="content">
+      		</section>
+        </div>
+    	</section>
+
+    </div>
+
+  <script src="/src/js/main.js"></script>
+
+  <script type="template" id="pressListTemplate">
+    <li>
+      <p class="pressName">{title}</p>
+      <p class="btnSbscription">
+        {btnList}
+      </p>
+    </li>
+  </script>
+
+  <script type="template" id="ulTemplate">
+  {newsTitleList}
+  </script>
+
+  <script type="template" id="newsTemplate">
+  	<h4 class="title">
+  		<span class="newsName">{title}</span> <button class="btnDelNews">X</button>
+  	</h4>
+  	<div class="newsList">
+  		<img src={imgurl} alt="">
+  		<ul>
+  			{newsList}
+  		</ul>
+  	</div>
+  </script>
+  </body>
+</html>
